@@ -1,0 +1,359 @@
+body,
+#root,
+.sonar-container {
+  background: #f5f6fa !important;
+  font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+  color: #232e3c;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.sonar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  background: #232e3c;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 12px 12px 0 0;
+  margin: 0 0 2rem 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 8px rgba(35, 46, 60, 0.07);
+}
+
+.sonar-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(35, 46, 60, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.sonar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sonar-form input,
+.sonar-form textarea {
+  padding: 8px 16px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f5f6fa;
+  color: #232e3c;
+  resize: vertical;
+  transition: border 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sonar-form input:focus,
+.sonar-form textarea:focus {
+  border: 1.5px solid #2b5cff;
+  outline: none;
+}
+
+.sonar-form button {
+  width: fit-content;
+  align-self: flex-start;
+  background: #2b5cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 0.5em;
+}
+.sonar-form button:hover {
+  background: #1a3fa6;
+}
+
+.sonar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.98rem;
+  box-shadow: 0 1px 4px rgba(35, 46, 60, 0.04);
+}
+.sonar-table th,
+.sonar-table td {
+  padding: 0.8em 1em;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+.sonar-table th {
+  background: #f5f6fa;
+  font-weight: 600;
+  color: #232e3c;
+}
+.sonar-table tr:last-child td {
+  border-bottom: none;
+}
+.sonar-table pre {
+  margin: 0;
+  font-size: 0.95em;
+  background: #f5f6fa;
+  border-radius: 4px;
+  padding: 0.3em 0.5em;
+}
+.sonar-table button {
+  margin-right: 0.5em;
+  background: #e5e7eb;
+  color: #232e3c;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3em 0.9em;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sonar-table button:hover {
+  background: #2b5cff;
+  color: #fff;
+}
+
+.sonar-error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #2b5cff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  background: none;
+  color: #232e3c;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  font-size: 2.5rem;
+  box-shadow: none;
+}
+
+button.create-btn,
+button.delete-btn,
+button.cancel-btn,
+button.submit-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button.create-btn {
+  background: #2b5cff;
+  color: #fff;
+}
+button.create-btn:hover {
+  background: #1a3fa6;
+}
+
+button.delete-btn {
+  background: #ef4444;
+  color: #fff;
+}
+button.delete-btn:hover {
+  background: #dc2626;
+}
+
+button.cancel-btn {
+  background: #e5e7eb;
+  color: #232e3c;
+}
+button.cancel-btn:hover {
+  background: #d1d5db;
+}
+
+button.submit-btn {
+  background: #2b5cff;
+  color: #fff;
+}
+button.submit-btn:hover {
+  background: #1a3fa6;
+}
+
+button.submit-btn:disabled {
+  background-color: #a9bfff;
+  cursor: not-allowed;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  animation: slide-down 0.3s ease-out;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #232e3c;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #9ca3af;
+  line-height: 1;
+  padding: 0;
+}
+.close-btn:hover {
+  color: #232e3c;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+.modal-body p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 0 0 12px 12px;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0 0;
+}
+
+.sonar-form div {
+  margin-bottom: 0.5rem;
+}
+
+.sonar-form textarea {
+  min-height: 80px;
+}
+
+/* Remove default focus outline from all buttons */
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.sonar-table th:first-child,
+.sonar-table td:first-child {
+  width: 40px;
+  text-align: center;
+}
+
+.sonar-table input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.sonar-table tr.selected {
+  background-color: #e9efff;
+}
+.sonar-table tr.selected:hover {
+  background-color: #dbe4ff;
+}
